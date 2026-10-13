@@ -1,0 +1,464 @@
+{
+  "1": [
+    {
+      "scene_number": 1,
+      "summary": "Leah scrubs and cleans in the servants' wing; Cassian (EXACTLY 14, a BOY — verbal cruelty ONLY; he NEVER touches/holds/grabs/blocks her, NO physical contact of any kind; no sexualized words; NEVER describe his gaze, fingers or closeness on her body, nothing sensual) humiliates her with base chores.",
+      "characters": [
+        "Leah",
+        "Cassian"
+      ],
+      "setting": "Valdris Castle — servants' wing",
+      "goal": "Establish the Cinderella status",
+      "emotional_beat": "Muffled humiliation"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Mirela (queen only — never 'Crown-Mother', never invokes any 'Unique Mother') summons her and lays out the betrothal contract with Lord Varnholt — marriage or slow ruin. Leah does NOT accuse Mirela of any murder; Mirela reveals NOTHING about the past; no poison confrontation.",
+      "characters": [
+        "Leah",
+        "Mirela",
+        "Lord Varnholt"
+      ],
+      "setting": "The queen's office",
+      "goal": "Set the stakes of flight",
+      "emotional_beat": "Cold fear"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Alone in her room, Leah remembers her mother's sudden death in sensory fragments (a sweet brew, trembling hands) and begins to SUSPECT Mirela's hand (dread, questions — she does NOT know; NEVER write 'she knew/had known' about any murder; NO hidden notes, NO letters in portraits, NO messages from her dead mother, NO written proof of anything — evidence appears ONLY in ch5 via Lara; Elowen has NO prior connection to Elara and is a stranger until scene 5; NO Vestalian religion: NEVER name Azara, Vohra, Unique Mother or sacred fire; confirmation comes only in ch4). She decides to flee.",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Servant's room",
+      "goal": "The decision to flee",
+      "emotional_beat": "Fragile resolve"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Flight through corridors, gates and streets — guards, dogs, hunger, the Lower City. Flight ONLY: Leah meets NO ONE, NO stranger speaks to her, NO tall dark-haired woman, NO one finds or helps her; she reaches the inn alone.",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Castle, gates, streets to the Lower City",
+      "goal": "Physical escape",
+      "emotional_beat": "Controlled panic"
+    },
+    {
+      "scene_number": 5,
+      "summary": "The Red Velvet Inn; Elowen (mahogany hair, AMBER eyes — never black hair, never grey-green eyes) recognizes her instantly and takes her in out of interest.",
+      "characters": [
+        "Leah",
+        "Elowen"
+      ],
+      "setting": "The Red Velvet Inn",
+      "goal": "Hook the story",
+      "emotional_beat": "Tense relief"
+    }
+  ],
+  "2": [
+    {
+      "scene_number": 1,
+      "summary": "Elowen tells her she knows who she is and offers the contract: young clients only, discretion, her cut. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Elowen"
+      ],
+      "setting": "Elowen's study",
+      "goal": "The contract",
+      "emotional_beat": "Suspicion"
+    },
+    {
+      "scene_number": 2,
+      "summary": "The first client, UNNAMED (young, fumbling, clumsy; finishes fast, pays, leaves): rushed and graceless; he NEVER asks what she feels and NEVER tends to her pleasure — she performs, observes, endures; autonomy only. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Inn suite",
+      "goal": "First autonomy",
+      "emotional_beat": "Shame and curiosity"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Second day: the girls teach her to listen and remember; nobles' secrets are worth gold. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Elowen"
+      ],
+      "setting": "Inn salon",
+      "goal": "The lesson of information",
+      "emotional_beat": "Adaptation"
+    },
+    {
+      "scene_number": 4,
+      "summary": "A drunken officer talks of nothing but 'a host in the east' (big numbers, a woman leads them, they say — NO goddess names, NO 'Mother of Two Faces', NO 'Daughters', NO Vestalia, NO Lara); Elowen listens carefully. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Elowen"
+      ],
+      "setting": "Inn salon",
+      "goal": "Foreshadowing",
+      "emotional_beat": "Unease"
+    }
+  ],
+  "3": [
+    {
+      "scene_number": 1,
+      "summary": "Leah learns her body's responses with rushed clients who care nothing for her pleasure; curiosity and shame; nobody tends to her pleasure yet. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Inn suite",
+      "goal": "Self-knowledge",
+      "emotional_beat": "Awakening"
+    },
+    {
+      "scene_number": 2,
+      "summary": "An older girl tells what secrets noble clients spill over wine. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "The Red Velvet Inn",
+      "goal": "Information as currency",
+      "emotional_beat": "Complicity"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Elowen pulls her out of a violent client's reach — protection at a price. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Elowen"
+      ],
+      "setting": "The Red Velvet Inn",
+      "goal": "The price of protection",
+      "emotional_beat": "Mixed gratitude"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Distant travellers' tales from a merchant: the far-eastern empire 'Vestalia' and its women-army 'Daughters of Flame' as foreign words only — NO goddess names, NO theology, NO Lara, NO envoys. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "The Red Velvet Inn",
+      "goal": "Foreshadowing",
+      "emotional_beat": "Curiosity"
+    }
+  ],
+  "4": [
+    {
+      "scene_number": 1,
+      "summary": "Lara enters with two female guards and gold; asks for Leah by name; Elowen freezes. (aim ~1200 words)",
+      "characters": [
+        "Madam Lara",
+        "Elowen",
+        "Leah"
+      ],
+      "setting": "Inn hall",
+      "goal": "Mystery",
+      "emotional_beat": "Tension"
+    },
+    {
+      "scene_number": 2,
+      "summary": "In the luxury suite, Lara calms her with wine and light touch, states no one touches her without consent; Leah relaxes for the first time. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Trust",
+      "emotional_beat": "Cautious tenderness"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Consensual intimate scene between adults (explicit allowed, always consensual); first time anyone tends to her pleasure; subspace, 'mommy' slips out unthinking. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Surrender and attachment",
+      "emotional_beat": "Total abandon"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Lara dresses and introduces herself: Queen of Vestalia, the army, Mirela's crimes. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "The reveal",
+      "emotional_beat": "Shock"
+    }
+  ],
+  "5": [
+    {
+      "scene_number": 1,
+      "summary": "Lara spreads map and evidence: Queen Elara's poison, the mercenaries' payment. Two Vestalian women, Mira and Vela of the proposed future council, attend as living proof. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara",
+        "Mira",
+        "Vela"
+      ],
+      "setting": "Luxury suite",
+      "goal": "The proof",
+      "emotional_beat": "Lucid horror"
+    },
+    {
+      "scene_number": 2,
+      "summary": "The 5-step plan: dethroning, coronation, Vestalian council, vassalage. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara",
+        "Mira",
+        "Vela"
+      ],
+      "setting": "Luxury suite",
+      "goal": "The offer",
+      "emotional_beat": "Toxic hope"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Leah asks for time; Lara grants it, but the army crosses the border anyway. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Pressure",
+      "emotional_beat": "Tightening grip"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Alone with the evidence, Leah mourns mother and father. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Mourning",
+      "emotional_beat": "Old grief"
+    }
+  ],
+  "6": [
+    {
+      "scene_number": 1,
+      "summary": "Leah reads the marching orders; the figures don't match '1 million'. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "The Red Velvet Inn",
+      "goal": "Discovery",
+      "emotional_beat": "Doubt"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Confrontation: 'How many, really?' Lara partly admits. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "First crack",
+      "emotional_beat": "Cold tension"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Leah inventories her currency: secret passages, loyal servants, proof of murder. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Negotiating currency",
+      "emotional_beat": "New calculus"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Lara looks at her differently — respect or recalibration. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Power shift",
+      "emotional_beat": "Cautious respect"
+    }
+  ],
+  "7": [
+    {
+      "scene_number": 1,
+      "summary": "At night, Leah writes her conditions on a strip of paper. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Preparation",
+      "emotional_beat": "Resolve"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Table I: Cassian untouched — Lara accepts, a living guarantee. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Small victory",
+      "emotional_beat": "Relief"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Table II: exile not execution; a real council vote — Lara refuses the full vote. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "The clash",
+      "emotional_beat": "Restrained fury"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Lara corrects her for the first time under Vestalian rules (maternal correction, consensual personal level; political disagreement never punished by personal withdrawal) — then a half-signed accord both know isn't over. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Luxury suite",
+      "goal": "Taste of discipline + truce",
+      "emotional_beat": "Fragile peace"
+    }
+  ],
+  "8": [
+    {
+      "scene_number": 1,
+      "summary": "Dawn departure from the inn: Elowen's FAREWELL (paid off; brothel becomes Vestalian info asset; one unsentimental parting line; Leah never returns, never forgets) — then the night of opened gates by spies; the Daughters of Flame enter without slaughter. (aim ~1200 words)",
+      "characters": [
+        "Madam Lara"
+      ],
+      "setting": "Capital gates",
+      "goal": "Clean conquest",
+      "emotional_beat": "Cold grandeur"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Mirela arrested with evidence read in public; she doesn't deny it, she smiles. (aim ~1200 words)",
+      "characters": [
+        "Mirela",
+        "Madam Lara",
+        "Leah"
+      ],
+      "setting": "Throne hall",
+      "goal": "The fall",
+      "emotional_beat": "Bitter triumph"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Leah's coronation; the people love her; the crown is heavy. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Capital square",
+      "goal": "The peak",
+      "emotional_beat": "Dizziness"
+    },
+    {
+      "scene_number": 4,
+      "summary": "The price: nobles choose kneeling or exile (first whisper of resistance), and Cassian is brought before them — Leah takes him under her wing in one unguarded child moment (fear, not cruelty; no redemption). (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara",
+        "Cassian"
+      ],
+      "setting": "Throne hall",
+      "goal": "The price + shielding her brother",
+      "emotional_beat": "Unease + tenderness"
+    }
+  ],
+  "9": [
+    {
+      "scene_number": 1,
+      "summary": "First council session: Leah proposes, the council disposes. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Council chamber",
+      "goal": "The hollow crown",
+      "emotional_beat": "Frustration"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Correction under Vestalian rules; Leah feels kept, not formed — the two-levels rule breaks (tested here). (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Palace",
+      "goal": "The broken limit",
+      "emotional_beat": "Shame and rage"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Lara and Sera's shadow (Sera named ONLY here): 'you don't correct someone who cannot leave' — yet she continues. (aim ~1200 words)",
+      "characters": [
+        "Madam Lara"
+      ],
+      "setting": "Lara's apartments",
+      "goal": "Lara's crack",
+      "emotional_beat": "Guilt"
+    },
+    {
+      "scene_number": 4,
+      "summary": "The exiled nobles' message (a way out, a ship, one night) forces the tally: financial, emotional, physical dependence itemized. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Palace",
+      "goal": "Temptation + the tally",
+      "emotional_beat": "Dangerous hope + lucid despair"
+    }
+  ],
+  "10": [
+    {
+      "scene_number": 1,
+      "summary": "The night of decision: the bag packed and unpacked three times. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Palace",
+      "goal": "The scales",
+      "emotional_beat": "Torn apart"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Last confrontation: 'If I leave, will you let me?' Lara's silence. (aim ~1200 words)",
+      "characters": [
+        "Leah",
+        "Madam Lara"
+      ],
+      "setting": "Lara's apartments",
+      "goal": "The question",
+      "emotional_beat": "Naked truth"
+    },
+    {
+      "scene_number": 3,
+      "summary": "Leah's act: the gesture by which she chooses — stay, leave, or double game. (aim ~1200 words)",
+      "characters": [
+        "Leah"
+      ],
+      "setting": "Palace and harbour",
+      "goal": "The act",
+      "emotional_beat": "Freedom"
+    },
+    {
+      "scene_number": 4,
+      "summary": "Lara's gesture: she burns the pursuit orders — the one thing that proves it — then the open epilogue: ship or crown, last image in the mirror. (aim ~1200 words)",
+      "characters": [
+        "Madam Lara",
+        "Leah"
+      ],
+      "setting": "Palace",
+      "goal": "The proof + echo",
+      "emotional_beat": "Unspoken love + beginning"
+    }
+  ]
+}
