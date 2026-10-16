@@ -19,18 +19,20 @@ Stdlib only, UTF-8, portable paths (repo root = parent of scripturi/).
 
 import argparse
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = SCRIPT_DIR.parent  # repo root: CANON.md, scenes.json, *.jsonl live here
-TRUST_LOG = ROOT / "reviewer_trust.jsonl"
+BASE = Path(os.getenv("GLASS_BASE", str(ROOT)))  # per-project base (e.g. lantern/)
+TRUST_LOG = BASE / "reviewer_trust.jsonl"
 
 
 def load_reviewer_verdict(ch, verdict_path=None):
     """Read canon_verdict_chN.json -> (writer, reviewer, reviewer_pass)."""
-    p = Path(verdict_path) if verdict_path else (ROOT / f"canon_verdict_ch{ch}.json")
+    p = Path(verdict_path) if verdict_path else (BASE / f"canon_verdict_ch{ch}.json")
     if not p.exists():
         return "unknown", "unknown", None
     v = json.loads(p.read_text(encoding="utf-8"))

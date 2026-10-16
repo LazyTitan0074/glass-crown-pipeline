@@ -1,0 +1,74 @@
+{
+  "1": [
+    {
+      "scene_number": 1,
+      "summary": "Night of the storm's first day. Ruth (36, keeper) logs the lamp and counts rooms and stores while her brother Elias (29) boards the gallery door. A guest arrives half-drowned at the rocks: a woman with a locked valise. Ruth notes the valise's weight at eleven pounds and locks it in the storeroom unopened. The woman gives no name. Jonah (18) is seen working silently in the background; he speaks no line. (aim ~1200 words)",
+      "characters": ["Ruth", "Elias", "Jonah"],
+      "setting": "Lighthouse, entrance and storeroom",
+      "goal": "Establish place, storm, and the locked valise",
+      "emotional_beat": " grim duty"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Supper in the kitchen room. The unnamed guest eats little and watches the lamp. Elias tells a childhood story that marks them plainly as brother and sister. The radio crackles with a weather warning: four days of storm. Jonah mends a rope in the corner, silent throughout. Lights out with the lamp turning above. (aim ~1200 words)",
+      "characters": ["Ruth", "Elias"],
+      "setting": "Kitchen room",
+      "goal": "Sibling bond and the four-day sentence",
+      "emotional_beat": "Wary coexistence"
+    }
+  ],
+  "2": [
+    {
+      "scene_number": 1,
+      "summary": "Morning of day two. The guest introduces herself at last: Margaret, 44. Jonah speaks his first on-page line, a short practical sentence about the lamp oil. The radio dies mid-broadcast into static. (aim ~1200 words)",
+      "characters": ["Ruth", "Margaret", "Jonah"],
+      "setting": "Lamp room and radio corner",
+      "goal": "Name Margaret; give Jonah his voice; kill the radio",
+      "emotional_beat": "First cracks"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Elias inventories the four rooms with Ruth and finds nothing missing but his own unease. Margaret asks after her valise and is told it sits locked where she left it. Sibling talk over accounts; no warmth beyond family. (aim ~1200 words)",
+      "characters": ["Ruth", "Elias", "Margaret"],
+      "setting": "The four rooms",
+      "goal": "Pressure without answers",
+      "emotional_beat": "Tightening"
+    }
+  ],
+  "3": [
+    {
+      "scene_number": 1,
+      "summary": "Day three. Nerves fray. Elias accuses the storm, then the guest, then himself; Ruth holds the sibling line with plain familial firmness. Jonah, now talking freely, repeats something the guest said that does not match her story — suspicion WITHOUT naming who lies. Nobody opens the valise. (aim ~1200 words)",
+      "characters": ["Ruth", "Elias", "Margaret", "Jonah"],
+      "setting": "Kitchen room",
+      "goal": "Test loyalties; plant doubt with no target",
+      "emotional_beat": "Suspicion"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Night watch. Ruth weighs the locked valise in her hands at eleven pounds exactly and puts it back unopened. The lamp turns; the storm does not lift. (aim ~1200 words)",
+      "characters": ["Ruth"],
+      "setting": "Storeroom and gallery",
+      "goal": "Re-anchor the object rule",
+      "emotional_beat": "Resolve"
+    }
+  ],
+  "4": [
+    {
+      "scene_number": 1,
+      "summary": "Day four, storm breaking after. Cornered by Ruth's plain questions, the liar is revealed: one of the four is not who they claim, proven by facts planted in chapter 1. The locked valise is opened at last and its contents settle the matter. (aim ~1200 words)",
+      "characters": ["Ruth", "Elias", "Margaret", "Jonah"],
+      "setting": "Kitchen room",
+      "goal": "The reveal, earned by chapter-1 facts",
+      "emotional_beat": "Reckoning"
+    },
+    {
+      "scene_number": 2,
+      "summary": "Aftermath on the rocks as the storm ends. Whoever stays and whoever leaves is decided; the lamp keeps turning for whoever keeps it next. (aim ~1200 words)",
+      "characters": ["Ruth"],
+      "setting": "Rocks below the light",
+      "goal": "Close the circle",
+      "emotional_beat": "Quiet"
+    }
+  ]
+}

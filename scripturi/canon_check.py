@@ -12,8 +12,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-BASE = Path(r"C:\Users\bizoi\libriscribe-roman")
-PROJ = Path(r"C:\Users\bizoi\AppData\Roaming\Python\Python314\projects\leah_si_lara")
+BASE = Path(os.getenv("GLASS_BASE", r"C:\Users\bizoi\libriscribe-roman"))
+PROJ = Path(os.getenv("GLASS_PROJ", r"C:\Users\bizoi\AppData\Roaming\Python\Python314\projects\leah_si_lara"))
 load_dotenv(BASE / ".env")
 
 PROMPT = """You are a canon continuity checker for the novel "The Glass Crown".
@@ -38,7 +38,22 @@ ANTI-FALSE-POSITIVE RULES (binding, take precedence):
 - The "asks for Leah BY NAME" beat belongs to the ch4 ENTRANCE scene ONLY. In ch5+ Lara addressing Leah without her name (pronouns, "you", titles) is CORRECT — NEVER flag it under C08.
 - TIMING GATE (binding): Lara pre-ch4 = violation. Mira/Vela appearing or referenced ch5+ = CORRECT (C16). Sera named ONLY ch9 Lara-context. Elowen in ch1 = CORRECT (C07). Vague eastern-host rumours ch1–3 = CORRECT.
 - ARITHMETIC (binding): you are checking CHAPTER {ch}. 7 > 4 and 7 > 5 and 7 > 6: anything allowed "from ch4/ch5/ch6 onward" is CORRECT here. NEVER claim the current chapter is "pre-ch4" or "pre-ch5" when {ch} >= 5.
-- Keep every "why" under 20 words. Keep the whole reply under 1200 tokens."""
+- Keep every "why" under 20 words. Keep the whole reply under 1200 tokens.
+{locked_block}"""
+
+LOCKED_TMPL = """LOCKED OBJECTS — contents consistency (binding):
+{locked}
+For EACH locked object above, list the items stated to be INSIDE it IN EACH SCENE of this chapter. If two scenes enumerate different sets — an item vanishes, or an item appears inside that is not in the CANON set — that is a CONTENTS-DRIFT violation: pass=false with fact=the L-code, quote=the conflicting sentence, why=<20 words. A locked object whose contents are never shown is CORRECT (not a violation); only contradictory enumerations fail."""
+
+
+def locked_facts(canon_text):
+    """Lines '- Lxx: ...' from CANON.md (FIX-3). Empty list => prompt unchanged."""
+    out = []
+    for line in canon_text.splitlines():
+        line = line.strip()
+        if line.startswith("- L") and ":" in line:
+            out.append(line[2:].strip())
+    return out
 
 
 def check_flash_lite(prompt):
@@ -98,8 +113,12 @@ def is_hedge(why):
     return False
 
 
+_PARSE_MODE = {"mode": "clean"}
+
+
 def parse_verdict(raw):
     try:
+        _PARSE_MODE["mode"] = "clean"
         return json.loads(raw)
     except Exception:
         pass
@@ -109,12 +128,14 @@ def parse_verdict(raw):
         if s.rstrip().endswith("```"):
             s = s.rstrip()[: -3]
     try:
+        _PARSE_MODE["mode"] = "fenced"
         return json.loads(s)
     except Exception:
         pass
     s2, e = s.find("{"), s.rfind("}")
     if s2 >= 0 and e > s2:
         try:
+            _PARSE_MODE["mode"] = "braces"
             return json.loads(s[s2:e + 1])
         except Exception:
             pass
@@ -132,10 +153,14 @@ def parse_verdict(raw):
                 continue
             out.append({"fact": m.group(1), "quote": m.group(2)[:200], "why": why[:200]})
         if out:
+            _PARSE_MODE["mode"] = "harvested-fail"
             return {"pass": False, "violations": out[:10]}
+        _PARSE_MODE["mode"] = "harvested-pass"
         return {"pass": True, "violations": []}
     if re.search(r'"pass"\s*:\s*true', s):
+        _PARSE_MODE["mode"] = "pass-sniff"
         return {"pass": True, "violations": []}
+    _PARSE_MODE["mode"] = "unparseable"
     return {"pass": False, "violations": [{"fact": "PARSE", "quote": raw[:200], "why": "unparseable verdict"}]}
 
 
@@ -144,7 +169,9 @@ def main():
     writer = sys.argv[2] if len(sys.argv) > 2 else "unknown"
     facts = (BASE / "CANON.md").read_text(encoding="utf-8")
     text = (PROJ / f"chapter_{ch}.md").read_text(encoding="utf-8")
-    prompt = PROMPT.format(facts=facts, ch=ch, text=text)
+    locked = locked_facts(facts)
+    locked_block = LOCKED_TMPL.format(locked="\n".join("- " + l for l in locked)) if locked else ""
+    prompt = PROMPT.format(facts=facts, ch=ch, text=text, locked_block=locked_block)
 
     raw, reviewer = None, None
     # Reviewer must differ from writer. Primary: Flash-Lite, then FREE local
@@ -170,11 +197,18 @@ def main():
         verdict = parse_verdict(raw)
         # Filter hedged non-findings on EVERY path (small reviewers list facts
         # just to conclude they are fine — those are not violations).
-        kept = [v for v in verdict.get("violations", []) if not is_hedge(str(v.get("why", "")))]
+        raw_n = len(verdict.get("violations", []))
+        # PARSE placeholders are infrastructure failures, never hedges:
+        # an unparseable reviewer must FAIL, never silently pass.
+        kept = [v for v in verdict.get("violations", [])
+                if v.get("fact") == "PARSE" or not is_hedge(str(v.get("why", "")))]
         verdict = {"pass": len(kept) == 0, "violations": kept}
+        hedged_filtered = raw_n - len(kept)
 
     result = {"chapter": int(ch), "writer": writer, "reviewer": reviewer,
               "pass": bool(verdict.get("pass")), "violations": verdict.get("violations", []),
+              "parse_mode": _PARSE_MODE["mode"] if raw is not None else "reviewer-down",
+              "hedged_filtered": hedged_filtered if raw is not None else 0,
               "at": datetime.now(timezone.utc).isoformat()}
     (BASE / f"canon_verdict_ch{ch}.json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -183,7 +217,7 @@ def main():
 
     # registry update
     regp = BASE / "canon_registry.json"
-    reg = json.loads(regp.read_text(encoding="utf-8"))
+    reg = json.loads(regp.read_text(encoding="utf-8")) if regp.exists() else {"chapters": {}}
     reg["chapters"][str(ch)] = {"status": "pass" if result["pass"] else "FAIL",
                                 "reviewer": reviewer,
                                 "violations": len(result["violations"])}
